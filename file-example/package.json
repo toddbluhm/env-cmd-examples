@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "test": "npm run test-node && npm run test-shell",
+    "test-node": "../node_modules/.bin/env-cmd ./.env-file node index.js",
+    "test-shell": "../node_modules/.bin/env-cmd ./.env-file sh ./env.sh"
+  }
+}

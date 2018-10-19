@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "test": "../node_modules/.bin/env-cmd --fallback ./non-existant-file node index.js"
+  }
+}

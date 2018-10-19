@@ -1,0 +1,1 @@
+printf "NODE_ENV: %s\nENVVAR: %s\n" "$NODE_ENV" "$ENVVAR"

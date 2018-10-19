@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "test-dev": "../node_modules/.bin/env-cmd dev node index.js",
+    "test-test": "../node_modules/.bin/env-cmd test node index.js",
+    "test-prod": "../node_modules/.bin/env-cmd prod node index.js",
+    "test": "../node_modules/.bin/env-cmd prod node index.js"
+  }
+}
