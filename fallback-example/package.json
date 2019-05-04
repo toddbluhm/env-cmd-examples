@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "test": "../node_modules/.bin/env-cmd --fallback ./non-existant-file node index.js"
+    "test": "echo \"\\033[0;32mFallback Usage\\033[0m\" && ../node_modules/.bin/env-cmd --fallback -f ./non-existant-file node index.js"
   }
 }

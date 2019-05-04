@@ -1,0 +1,9 @@
+{
+  "prod": {
+    "NODE_ENV": "rc-file"
+  },
+  "test": {
+    "NODE_ENV": "crazy-test",
+    "ENVVAR": "exists"
+  }
+}

@@ -1,8 +1,7 @@
 {
   "scripts": {
-    "test-dev": "../node_modules/.bin/env-cmd dev node index.js",
-    "test-test": "../node_modules/.bin/env-cmd test node index.js",
-    "test-prod": "../node_modules/.bin/env-cmd prod node index.js",
-    "test": "../node_modules/.bin/env-cmd prod node index.js"
+    "test-rc-test": "echo \"\\033[0;32mBasic RC File Usage\\033[0m\" && ../node_modules/.bin/env-cmd -e test node index.js",
+    "test-rc-test-prod": "echo \"\\033[0;32mMultiple Environments RC File Usage\\033[0m\" && ../node_modules/.bin/env-cmd -e test,prod -r ./.cmdrc.json node index.js",
+    "test": "npm run test-rc-test && npm run test-rc-test-prod"
   }
 }

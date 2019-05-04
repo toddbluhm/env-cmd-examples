@@ -1,7 +1,9 @@
 {
   "scripts": {
-    "test": "npm run test-node && npm run test-shell",
-    "test-node": "../node_modules/.bin/env-cmd ./.env-file node index.js",
-    "test-shell": "../node_modules/.bin/env-cmd ./.env-file sh ./env.sh"
+    "test": "npm run test-basic && npm run test-node && npm run test-shell && npm run test-use-shell",
+    "test-basic": "echo \"\\033[0;32mBasic Usage\\033[0m\" && ../node_modules/.bin/env-cmd node index.js",
+    "test-node": "echo \"\\033[0;32mCustom Env File Usage\\033[0m\" && ../node_modules/.bin/env-cmd -f ./.env-file node index.js",
+    "test-shell": "echo \"\\033[0;32mCustom Env File Usage with SH\\033[0m\" && ../node_modules/.bin/env-cmd -f ./.env-file sh ./env.sh",
+    "test-use-shell": "echo \"\\033[0;32mCustom Rnv File Usage with Use Shell\\033[0m\" && ../node_modules/.bin/env-cmd -f ./.env-file --use-shell \"node index.js && sh ./env.sh\""
   }
 }
