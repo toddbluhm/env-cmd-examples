@@ -1,3 +1,8 @@
+[![Travis](https://img.shields.io/travis/toddbluhm/env-cmd-examples.svg)](https://travis-ci.com/toddbluhm/env-cmd-examples)
+[![GithubLicense](https://img.shields.io/github/license/toddbluhm/env-cmd-examples.svg)](https://github.com/toddbluhm/env-cmd-examples/blob/master/LICENSE)
+[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/toddbluhm/env-cmd-examples.svg)](https://greenkeeper.io/)
+
 # Env-cmd-examples
 
 This repo contains various examples of how to use the npm package [env-cmd](https://github.com/toddbluhm/env-cmd).
