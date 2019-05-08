@@ -1,4 +1,4 @@
-[![Travis](https://img.shields.io/travis/toddbluhm/env-cmd-examples.svg)](https://travis-ci.com/toddbluhm/env-cmd-examples)
+[![Travis](https://travis-ci.com/toddbluhm/env-cmd-examples.svg?branch=master)](https://travis-ci.com/toddbluhm/env-cmd-examples)
 [![GithubLicense](https://img.shields.io/github/license/toddbluhm/env-cmd-examples.svg)](https://github.com/toddbluhm/env-cmd-examples/blob/master/LICENSE)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![Greenkeeper badge](https://badges.greenkeeper.io/toddbluhm/env-cmd-examples.svg)](https://greenkeeper.io/)
