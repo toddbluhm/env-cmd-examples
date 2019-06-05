@@ -1,9 +1,14 @@
 {
   "prod": {
-    "NODE_ENV": "rc-file"
+    "TEST_NAME": "Custom RC File Path Test",
+    "NODE_ENV": "production",
+    "ENVVAR": "exists",
+    "ENV_PATH": "./.cmdrc.json"
   },
   "test": {
-    "NODE_ENV": "crazy-test",
-    "ENVVAR": "exists"
+    "TEST_NAME": "Custom RC File Path Test",
+    "NODE_ENV": "test",
+    "ENVVAR": "exists",
+    "ENV_PATH": "./.cmdrc.json"
   }
 }

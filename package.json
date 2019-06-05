@@ -6,10 +6,10 @@
   "license": "MIT",
   "scripts": {
     "lint": "standard --fix",
-    "test": "cd ./fallback-example && npm test && cd ../file-example && npm test && cd ../rc-example && npm test && cd .."
+    "test": "cd ./fallback-example && npm test && cd ../file-example && npm test && cd ../rc-example && npm test && cd ..",
+    "postinstall": "cd ./fallback-example && npm i && cd ../file-example && npm i && cd ../rc-example && npm i && cd .."
   },
   "devDependencies": {
-    "env-cmd": "^9.0.0",
     "standard": "^12.0.0"
   }
 }

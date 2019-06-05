@@ -1,1 +1,1 @@
-printf "NODE_ENV: %s\nENVVAR: %s\n" "$NODE_ENV" "$ENVVAR"
+printf "TEST_NAME: %s\nNODE_ENV: %s\nENVVAR: %s\nENV_PATH: %s\n" "$TEST_NAME" "$NODE_ENV" "$ENVVAR" "$ENV_PATH"

@@ -1,5 +1,15 @@
 {
+  "name": "env-cmd-fallback-example",
+  "version": "9.0.0",
+  "description": "env-cmd fallback file example",
+  "author": "Todd Bluhm",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"\\033[0;32mFallback Usage\\033[0m\" && ../node_modules/.bin/env-cmd --fallback -f ./non-existant-file node index.js"
+    "test": "npm run test-fallback",
+    "test-fallback": "env-cmd --fallback -f ./non-existant-file node index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.0.0",
+    "env-cmd": "^9.0.0"
   }
 }
