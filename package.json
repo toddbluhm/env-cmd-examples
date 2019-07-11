@@ -10,6 +10,6 @@
     "postinstall": "cd ./fallback-example && npm i && cd ../file-example && npm i && cd ../rc-example && npm i && cd .."
   },
   "devDependencies": {
-    "standard": "^12.0.0"
+    "standard": "^13.0.1"
   }
 }
