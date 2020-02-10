@@ -6,10 +6,10 @@
   "license": "MIT",
   "scripts": {
     "test": "npm run test-fallback",
-    "test-fallback": "env-cmd --fallback -f ./non-existant-file node index.js"
+    "test-fallback": "env-cmd --verbose --fallback -f ./non-existant-file node index.js"
   },
   "dependencies": {
-    "chalk": "^2.0.0",
-    "env-cmd": "^10.0.0"
+    "chalk": "^3.0.0",
+    "env-cmd": "^10.1.0"
   }
 }

@@ -5,15 +5,17 @@
   "author": "Todd Bluhm",
   "license": "MIT",
   "scripts": {
-    "test": "npm run test-basic && npm run test-custom-path && npm run test-shell-script && npm run test-use-shell && npm run test-async-file",
-    "test-basic": "env-cmd node index.js",
-    "test-custom-path": "env-cmd -f ./.env-file node index.js",
-    "test-shell-script": "env-cmd -f ./shell-script.env sh ./env.sh",
-    "test-use-shell": "env-cmd -f ./use-shell.env --use-shell \"node index.js && sh ./env.sh\"",
-    "test-async-file": "env-cmd -f ./async-env.js node index.js"
+    "test": "npm run test-basic && npm run test-custom-path && npm run test-shell-script && npm run test-use-shell && npm run test-async-file && npm run test-env-expansion && npm run test-env-silent",
+    "test-basic": "env-cmd --verbose node index.js",
+    "test-custom-path": "env-cmd --verbose -f ./.env-file node index.js",
+    "test-shell-script": "env-cmd --verbose -f ./shell-script.env sh ./env.sh",
+    "test-use-shell": "env-cmd --verbose -f ./use-shell.env --use-shell \"node index.js --PATH=$ENV_PATH && sh ./env.sh\"",
+    "test-async-file": "env-cmd --verbose -f ./async-env.js node index.js",
+    "test-env-expansion": "env-cmd --verbose -x node index.js --user=$USER",
+    "test-env-silent": "ENV_PATH=./non-existent env-cmd --verbose --silent -f ./non-existent node index.js"
   },
   "dependencies": {
-    "chalk": "^2.0.0",
-    "env-cmd": "^10.0.0"
+    "chalk": "^3.0.0",
+    "env-cmd": "^10.1.0"
   }
 }

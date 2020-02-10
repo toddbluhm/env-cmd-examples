@@ -5,14 +5,15 @@
   "author": "Todd Bluhm",
   "license": "MIT",
   "scripts": {
-    "test": "npm run test-basic && npm run test-multiple-environments && npm run test-custom-rc-path && npm run test-async-rc",
-    "test-basic": "env-cmd -e test node index.js",
-    "test-multiple-environments": "env-cmd -e test,prod node index.js",
-    "test-custom-rc-path": "env-cmd -e test -r ./.cmdrc.json node index.js",
-    "test-async-rc": "env-cmd -e test -r ./async-rc.js node index.js"
+    "test": "npm run test-basic && npm run test-multiple-environments && npm run test-custom-rc-path && npm run test-async-rc && npm run test-silent",
+    "test-basic": "env-cmd --verbose -e test node index.js",
+    "test-multiple-environments": "env-cmd --verbose -e test,prod node index.js",
+    "test-custom-rc-path": "env-cmd --verbose -e test -r ./.cmdrc.json node index.js",
+    "test-async-rc": "env-cmd --verbose -e test -r ./async-rc.js node index.js",
+    "test-silent": "ENV_PATH=./non-existent env-cmd --verbose --silent -e test -r ./non-existent node index.js"
   },
   "dependencies": {
-    "chalk": "^2.0.0",
-    "env-cmd": "^10.0.0"
+    "chalk": "^3.0.0",
+    "env-cmd": "^10.1.0"
   }
 }
