@@ -20,8 +20,8 @@ assert(process.env.ENVVAR === 'exists')
 const possibleFilePaths = ['./.env', './.env-file', './async-env.js', './use-shell.env', './shell-script.env']
 assert(!!~possibleFilePaths.indexOf(process.env.ENV_PATH))
 const option = process.argv[process.argv.length - 1]
-if (option.includes('--user')) {
-  assert(option.split('=')[1] !== '')
+if (option.includes('--path')) {
+  assert(option.split('=')[1] === './.env')
 }
 
 console.log(chalk.green('Asserts Pass!'))
