@@ -9,9 +9,17 @@
     "test": "lerna run test"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
     "chalk": "^3.0.0",
     "env-cmd": "^10.1.0",
-    "lerna": "^3.20.2",
+    "husky": "^4.0.0",
+    "lerna": "^3.0.0",
     "standard": "^14.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
