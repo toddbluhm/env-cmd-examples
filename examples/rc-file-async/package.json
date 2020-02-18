@@ -1,0 +1,8 @@
+{
+  "name": "rc-file-async",
+  "version": "10.1.0",
+  "description": "env-cmd async rc file",
+  "scripts": {
+    "test": "env-cmd --verbose -e test -r async-rc.js node index.js"
+  }
+}

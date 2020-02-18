@@ -1,0 +1,8 @@
+{
+  "name": "env-file-async",
+  "version": "10.1.0",
+  "description": "env-cmd async env file example",
+  "scripts": {
+    "test": "env-cmd --verbose -f async-env.js node index.js"
+  }
+}

@@ -6,10 +6,12 @@
   "license": "MIT",
   "scripts": {
     "lint": "standard --fix",
-    "test": "cd ./fallback-example && npm test && cd ../file-example && npm test && cd ../rc-example && npm test && cd ..",
-    "postinstall": "cd ./fallback-example && npm i && cd ../file-example && npm i && cd ../rc-example && npm i && cd .."
+    "test": "lerna run test"
   },
   "devDependencies": {
+    "chalk": "^3.0.0",
+    "env-cmd": "^10.1.0",
+    "lerna": "^3.20.2",
     "standard": "^14.0.0"
   }
 }

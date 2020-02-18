@@ -1,0 +1,8 @@
+{
+  "name": "rc-file",
+  "version": "10.1.0",
+  "description": "env-cmd rc file basic example",
+  "scripts": {
+    "test": "env-cmd --verbose -e test node index.js"
+  }
+}

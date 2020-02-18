@@ -1,0 +1,8 @@
+{
+  "name": "env-file-custom-path",
+  "version": "10.1.0",
+  "description": "env-cmd custom env file path",
+  "scripts": {
+    "test": "env-cmd --verbose -f .env-file node index.js"
+  }
+}

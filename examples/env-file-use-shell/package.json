@@ -1,0 +1,8 @@
+{
+  "name": "env-file-use-shell",
+  "version": "10.1.0",
+  "description": "env-cmd use shell flag example",
+  "scripts": {
+    "test": "env-cmd --verbose -f use-shell.env --use-shell \"node index.js --path=\\$ENV_PATH && sh ./env.sh\""
+  }
+}

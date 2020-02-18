@@ -1,0 +1,8 @@
+{
+  "name": "env-file-shell-script",
+  "version": "10.1.0",
+  "description": "env-cmd env file shell script example",
+  "scripts": {
+    "test": "env-cmd --verbose -f shell-script.env sh ./env.sh"
+  }
+}
