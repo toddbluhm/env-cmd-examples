@@ -1,4 +1,4 @@
-name: NodeJS Tests
+name: tests
 
 on: [push]
 
@@ -17,8 +17,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run lint
-    - run: npm test
+    - name: Install Dependencies
+      run: npm install
+    - name: Lint Files
+      run: npm run lint
+    - name: Run Tests
       env:
         CI: true
+      run: npm test
+
