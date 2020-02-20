@@ -11,8 +11,15 @@ assert(process.env.NODE_ENV === 'env-file')
 assert(process.env.ENVVAR === 'exists')
 assert(process.env.ENV_PATH === './use-shell.env')
 const option = process.argv[process.argv.length - 1]
-if (option.includes('--path')) {
-  assert(option.split('=')[1] === './use-shell.env')
+if (process.platform === 'win32') {
+  if (option.includes('--pathWin32')) {
+    assert(option.split('=')[1] === './use-shell.env')
+  }
+}
+else {
+  if (option.includes('--path')) {
+    assert(option.split('=')[1] === './use-shell.env')
+  }
 }
 
 console.log(chalk.green('Asserts Pass!'))

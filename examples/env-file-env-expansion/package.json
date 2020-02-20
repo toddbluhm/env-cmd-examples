@@ -3,6 +3,6 @@
   "version": "10.1.0",
   "description": "env-cmd env expansion example",
   "scripts": {
-    "test": "env-cmd --verbose -x node index.js --path=\\$ENV_PATH"
+    "test": "env-cmd --verbose -x node index.js --path=\\$ENV_PATH --pathWin32=$ENV_PATH"
   }
 }

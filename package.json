@@ -12,6 +12,7 @@
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "chalk": "^3.0.0",
+    "cross-env": "^7.0.0",
     "env-cmd": "^10.1.0",
     "husky": "^4.0.0",
     "lerna": "^3.0.0",
