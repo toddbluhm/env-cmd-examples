@@ -10,13 +10,14 @@ console.log(`ENV_PATH: ${process.env.ENV_PATH}`)
 assert(process.env.NODE_ENV === 'env-file')
 assert(process.env.ENVVAR === 'exists')
 assert(process.env.ENV_PATH === './.env')
-const option = process.argv[process.argv.length - 1]
 if (process.platform === 'win32') {
+  const option = process.argv[process.argv.length - 1]
   if (option.includes('--pathWin32')) {
     assert(option.split('=')[1] === './.env')
   }
 }
 else {
+  const option = process.argv[process.argv.length - 2]
   if (option.includes('--path')) {
     assert(option.split('=')[1] === './.env')
   }
