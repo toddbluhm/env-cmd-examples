@@ -3,6 +3,6 @@
   "version": "10.1.0",
   "description": "env-cmd silent flag example",
   "scripts": {
-    "test": "ENV_PATH=./non-existent env-cmd --verbose --silent -f ./non-existent node index.js"
+    "test": "cross-env ENV_PATH=./non-existent env-cmd --verbose --silent -f ./non-existent node index.js"
   }
 }
