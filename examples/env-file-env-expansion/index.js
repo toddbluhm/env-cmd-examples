@@ -15,8 +15,7 @@ if (process.platform === 'win32') {
   if (option.includes('--pathWin32')) {
     assert(option.split('=')[1] === './.env')
   }
-}
-else {
+} else {
   const option = process.argv[process.argv.length - 2]
   if (option.includes('--path')) {
     assert(option.split('=')[1] === './.env')
