@@ -1,4 +1,5 @@
-[![Tests](https://github.com/toddbluhm/env-cmd-examples/workflows/tests/badge.svg?branch=master)](https://github.com/toddbluhm/env-cmd-examples/actions?query=workflow%3A%22tests%22)
+[![Tests-Linux](https://github.com/toddbluhm/env-cmd-examples/workflows/tests-linux/badge.svg?branch=master)](https://github.com/toddbluhm/env-cmd-examples/actions?query=workflow%3A%22tests-linux%22)
+[![Tests-Windows](https://github.com/toddbluhm/env-cmd-examples/workflows/tests-windows/badge.svg?branch=master)](https://github.com/toddbluhm/env-cmd-examples/actions?query=workflow%3A%22tests-windows%22)
 [![GithubLicense](https://img.shields.io/github/license/toddbluhm/env-cmd-examples.svg)](https://github.com/toddbluhm/env-cmd-examples/blob/master/LICENSE)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![Greenkeeper badge](https://badges.greenkeeper.io/toddbluhm/env-cmd-examples.svg)](https://greenkeeper.io/)
