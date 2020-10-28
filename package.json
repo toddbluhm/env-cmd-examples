@@ -16,7 +16,7 @@
     "env-cmd": "^10.1.0",
     "husky": "^4.0.0",
     "lerna": "^3.0.0",
-    "standard": "^14.0.0"
+    "standard": "^15.0.1"
   },
   "husky": {
     "hooks": {
