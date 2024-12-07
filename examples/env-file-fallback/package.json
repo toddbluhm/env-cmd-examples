@@ -2,7 +2,8 @@
   "name": "env-file-fallback",
   "version": "10.1.0",
   "description": "env-cmd fallback file example",
+  "type": "module",
   "scripts": {
-    "test": "env-cmd --verbose --fallback -f ./non-existant-file node index.js"
+    "test": "env-cmd --verbose --fallback -f ./non-existant-file -- node index.js"
   }
 }

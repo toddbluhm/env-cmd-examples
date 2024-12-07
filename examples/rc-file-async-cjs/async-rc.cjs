@@ -1,4 +1,4 @@
-export default Promise.resolve({
+module.exports = Promise.resolve({
   prod: {
     TEST_NAME: 'Async RC File Test',
     NODE_ENV: 'production',

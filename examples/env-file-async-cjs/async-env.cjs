@@ -1,4 +1,4 @@
-export default Promise.resolve({
+module.exports = Promise.resolve({
   TEST_NAME: 'Async File Test',
   NODE_ENV: 'env-file',
   ENVVAR: 'exists',

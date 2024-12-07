@@ -2,7 +2,8 @@
   "name": "env-file",
   "version": "10.1.0",
   "description": "env-cmd basic env file example",
+  "type": "module",
   "scripts": {
-    "test": "env-cmd --verbose node index.js"
+    "test": "env-cmd --verbose -- node index.js"
   }
 }

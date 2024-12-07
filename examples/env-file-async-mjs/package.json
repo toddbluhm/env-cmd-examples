@@ -1,9 +1,9 @@
 {
-  "name": "env-file-async",
+  "name": "env-file-async-mjs",
   "version": "10.1.0",
   "description": "env-cmd async env file example",
   "type": "module",
   "scripts": {
-    "test": "env-cmd --verbose -f async-env.js -- node index.js"
+    "test": "env-cmd --verbose -f async-env.mjs -- node index.js"
   }
 }

@@ -2,7 +2,8 @@
   "name": "env-file-silent",
   "version": "10.1.0",
   "description": "env-cmd silent flag example",
+  "type": "module",
   "scripts": {
-    "test": "cross-env ENV_PATH=./non-existent env-cmd --verbose --silent -f ./non-existent node index.js"
+    "test": "cross-env ENV_PATH=./non-existent env-cmd --verbose --silent -f ./non-existent -- node index.js"
   }
 }

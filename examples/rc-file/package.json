@@ -2,7 +2,8 @@
   "name": "rc-file",
   "version": "10.1.0",
   "description": "env-cmd rc file basic example",
+  "type": "module",
   "scripts": {
-    "test": "env-cmd --verbose -e test node index.js"
+    "test": "env-cmd --verbose -e test -- node index.js"
   }
 }

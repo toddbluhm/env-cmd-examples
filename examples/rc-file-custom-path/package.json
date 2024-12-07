@@ -2,7 +2,8 @@
   "name": "rc-file-custom-path",
   "version": "10.1.0",
   "description": "env-cmd rc file with custom path",
+  "type": "module",
   "scripts": {
-    "test": "env-cmd --verbose -e test -r .cmdrc.json node index.js"
+    "test": "env-cmd --verbose -e test -r .cmdrc.json -- node index.js"
   }
 }

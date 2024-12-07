@@ -2,7 +2,8 @@
   "name": "rc-file-multiple-environments",
   "version": "10.1.0",
   "description": "env-cmd rc file using multiple environments",
+  "type": "module",
   "scripts": {
-    "test": "env-cmd --verbose -e test,prod node index.js"
+    "test": "env-cmd --verbose -e test,prod -- node index.js"
   }
 }

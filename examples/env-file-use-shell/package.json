@@ -2,7 +2,8 @@
   "name": "env-file-use-shell",
   "version": "10.1.0",
   "description": "env-cmd use shell flag example",
+  "type": "module",
   "scripts": {
-    "test": "env-cmd --verbose -f use-shell.env --use-shell \"node index.js --path=\\$ENV_PATH --pathWin32=%ENV_PATH%\""
+    "test": "env-cmd --verbose -f use-shell.env --use-shell -- \"node index.js --path=\\$ENV_PATH --pathWin32=%ENV_PATH%\""
   }
 }
