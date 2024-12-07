@@ -2,7 +2,6 @@
 [![Windows Tests](https://github.com/toddbluhm/env-cmd-examples/workflows/windows%20tests/badge.svg)](https://github.com/toddbluhm/env-cmd-examples/actions?query=workflow%3A%22windows%20tests%22)
 [![License](https://badgen.net/github/license/toddbluhm/env-cmd-examples)](https://github.com/toddbluhm/env-cmd-examples/blob/master/LICENSE)
 [![Standard - JavaScript Style Guide](https://badgen.net/badge/code%20style/standard/green?icon=javascript)](http://standardjs.com/)
-[![Dependabot badge](https://badgen.net/dependabot/toddbluhm/env-cmd-examples?icon=dependabot)](https://dependabot.com/)
 
 # Env-cmd-examples
 
