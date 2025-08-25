@@ -4,6 +4,6 @@
   "description": "env-cmd async rc file",
   "type": "module",
   "scripts": {
-    "test": "env-cmd --verbose -e test -r async-rc.cjs -- node index.js"
+    "test": "env-cmd --verbose -e test -f async-rc.cjs -- node index.js"
   }
 }
